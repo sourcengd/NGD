@@ -6,9 +6,9 @@ from config import Muntazer, OWNER_ID
 @app.on_message(filters.private & filters.user(OWNER_ID))
 async def must_join_channel(_, message):
     if "‹ قناة الاشتراك ›" in message.text:
-        link = f"https://t.me/{Muntazer}"
+        link = f"https://t.me/{ngd_1}"
         await message.reply(
-            text=f"~ عزيزي المطور \n~ هذا هي قناة الاشتراك الاجباري @{Muntazer} .",
+            text=f"~ عزيزي المطور \n~ هذا هي قناة الاشتراك الاجباري @{ngd_1} .",
             reply_markup=InlineKeyboardMarkup([
                 [InlineKeyboardButton("~ freedom .", url=link)]
             ])
