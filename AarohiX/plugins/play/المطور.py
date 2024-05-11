@@ -1,41 +1,14 @@
-from pyrogram import Client, filters
-from pyrogram.types import InlineKeyboardMarkup, InlineKeyboardButton, Message
+import asyncio
+import os
+import requests
+import pyrogram
+from pyrogram import Client, filters, emoji
 from strings.filters import command
-from AarohiX import app
+from pyrogram.types import Message, InlineKeyboardMarkup, InlineKeyboardButton, ReplyKeyboardMarkup
+from pyrogram.errors import MessageNotModified
+from ZeMusic import app
+from config import OWNER_ID, LOGGER_ID
 import config
-
-@app.on_message(
-    command(["اوامر", "الاوامر"])
-)
-async def mmmezat(client, message):
-    await message.reply_text(
-        f"""╭── • تحديثات اليس • ──╮
-
- • اوامر التشغيل بالمجموعة
-
-• تشغيل + اسم الاغنية او بالرد 
--› لتشغيل الاغاني فالمجموعة
-
-• رعد طفيها او  ايقاف
--› لايقاف تشغيل جميع الصوتيات بالمكالمة
-
-• اليس الي بعده او تخطي
--› لتشغيل التالي بالانتظار
-
- • اليس وقفي او اسكتي
--› لكتم صوت الحساب المساعد بالمكالمة
-
-• اليس اتكلمي
--› لالغاء الكتم واكمال التشغيل
-
-• اليس اسكتي او ايقاف مؤقت
- -› لايقاف التشغيل بشكل مؤقت
-
-• اليس كملي او استئناف
- -› لاكمال التشغيل بعد الايقاف المؤقت
-
-╰── • تحديثات اليس • ──╯ """,),
-    )
 
 @app.on_message(command(["مطور", "المطور"]))
 async def devid(client: Client, message: Message):
