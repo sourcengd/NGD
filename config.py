@@ -39,15 +39,15 @@ HEROKU_API_KEY = getenv("HEROKU_API_KEY")
 
 UPSTREAM_REPO = getenv(
     "UPSTREAM_REPO",
-    "https://github.com/STKR2/RR8R9",
+    "https://github.com/sourcengd",
 )
 UPSTREAM_BRANCH = getenv("UPSTREAM_BRANCH", "main")
 GIT_TOKEN = getenv(
     "GIT_TOKEN", None
 )  # Fill this variable if your upstream repository is private
 
-SUPPORT_CHANNEL = getenv("SUPPORT_CHANNEL", "https://t.me/Xl444")
-SUPPORT_CHAT = getenv("SUPPORT_CHAT", "https://t.me/vvyvv6")
+SUPPORT_CHANNEL = getenv("SUPPORT_CHANNEL", "https://t.me/ngd_1")
+SUPPORT_CHAT = getenv("SUPPORT_CHAT", "https://t.me/ngd_1")
 
 AUTO_LEAVING_ASSISTANT = bool(getenv("AUTO_LEAVING_ASSISTANT", False))
 AUTO_SUGGESTION_MODE = getenv("AUTO_SUGGESTION_MODE", "True")
@@ -90,22 +90,22 @@ clean = {}
 autoclean = []
 
 START_IMG_URL = getenv(
-    "START_IMG_URL", "https://te.legra.ph/file/407ce4c57a645c11f65c0.jpg"
+    "START_IMG_URL", "https://graph.org/file/652fd5d4587fd12d49544.jpg"
 )
 PING_IMG_URL = getenv(
-    "PING_IMG_URL", "https://te.legra.ph/file/407ce4c57a645c11f65c0.jpg"
+    "PING_IMG_URL", "https://graph.org/file/652fd5d4587fd12d49544.jpg"
 )
 PLAYLIST_IMG_URL = getenv(
-    "PLAYLIST_IMG_URL", "https://te.legra.ph/file/407ce4c57a645c11f65c0.jpg"
+    "PLAYLIST_IMG_URL", "https://graph.org/file/652fd5d4587fd12d49544.jpg"
 )                          
 STATS_IMG_URL = getenv(
-    "STATS_IMG_URL", "https://te.legra.ph/file/407ce4c57a645c11f65c0.jpg"
+    "STATS_IMG_URL", "https://graph.org/file/652fd5d4587fd12d49544.jpg"
 )                       
 TELEGRAM_AUDIO_URL = getenv(
-    "TELEGRAM_AUDIO_URL", "https://te.legra.ph/file/407ce4c57a645c11f65c0.jpg"
+    "TELEGRAM_AUDIO_URL", "https://graph.org/file/652fd5d4587fd12d49544.jpg"
 )                            
 TELEGRAM_VIDEO_URL = getenv(
-    "TELEGRAM_VIDEO_URL", "https://te.legra.ph/file/407ce4c57a645c11f65c0.jpg"
+    "TELEGRAM_VIDEO_URL", "https://graph.org/file/652fd5d4587fd12d49544.jpg"
 )
 STREAM_IMG_URL = getenv(
     "STREAM_IMG_URL","https://te.legra.ph/file/407ce4c57a645c11f65c0.jpg"
@@ -117,13 +117,13 @@ YOUTUBE_IMG_URL = getenv(
     "YOUTUBE_IMG_URL", "https://graph.org/file/8882cbd7cc786826d9ecb.jpg"
 )
 SPOTIFY_ARTIST_IMG_URL = getenv(
-    "SPOTIFY_ARTIST_IMG_URL", "https://te.legra.ph/file/5fdd8da2461c05d893189.jpg"
+    "SPOTIFY_ARTIST_IMG_URL", "https://graph.org/file/652fd5d4587fd12d49544.jpg"
 )                                
 SPOTIFY_ALBUM_IMG_URL = getenv(
-    "SPOTIFY_ALBUM_IMG_URL", "https://te.legra.ph/file/5fdd8da2461c05d893189.jpg"
+    "SPOTIFY_ALBUM_IMG_URL", "https://graph.org/file/652fd5d4587fd12d49544.jpg"
 )                               
 SPOTIFY_PLAYLIST_IMG_URL = getenv(
-    "SPOTIFY_PLAYLIST_IMG_URL", "https://te.legra.ph/file/5fdd8da2461c05d893189.jpg"
+    "SPOTIFY_PLAYLIST_IMG_URL", "https://graph.org/file/652fd5d4587fd12d49544.jpg"
 )
 
 
