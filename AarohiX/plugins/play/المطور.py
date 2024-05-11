@@ -34,41 +34,27 @@ async def mmmezat(client, message):
 • اليس كملي او استئناف
  -› لاكمال التشغيل بعد الايقاف المؤقت
 
-╰── • تحديثات اليس • ──╯ """,
-        reply_markup=InlineKeyboardMarkup(
-            [
-                [
-                    InlineKeyboardButton(
-                        "- المطور .", url=f"tg://openmessage?user_id={config.OWNER_ID}"
-                    ),
-                ],
-                [
-                    InlineKeyboardButton(
-                        "- مسح .", callback_data="close"
-                    ),
-                ],
-            ]
-        ),
+╰── • تحديثات اليس • ──╯ """,),
     )
 
-@app.on_message(
-    command(["المطور", "السورس", "المصنع"])
-)
-async def maker(client: Client, message: Message):
+@app.on_message(command(["مطور", "المطور"]))
+async def devid(client: Client, message: Message):
+    usr = await client.get_users(OWNER_ID)
+    name = usr.first_name
+    usrnam = usr.username
+    uid = OWNER_ID
+    await app.download_media(usr.photo.big_file_id, file_name=os.path.join("downloads", "developer.jpg"))
+       
     await message.reply_photo(
-        photo="https://graph.org/file/652fd5d4587fd12d49544.jpg",
-        caption="~ Team \n~ Dav Source",
+        photo="downloads/developer.jpg",
+        caption=f"""<b>𝑛𝑎𝑚𝑒 :</b> <a href='tg://user?id={uid}'>{name}</a>\n\n<b>𝑢𝑠𝑒𝑟 :</b> @{usrnam}""",
         reply_markup=InlineKeyboardMarkup(
             [
                 [
+                    InlineKeyboardButton(name, url=f"tg://user?id={uid}"),
+                ],[
                     InlineKeyboardButton(
-                        "- مطور البوت .", url=f"tg://openmessage?user_id={config.OWNER_ID}"
-                    ),
-                ],
-                [
-                    InlineKeyboardButton(
-                        "- قناة البوت . ", url=config.SUPPORT_CHAT
-                    ),
+                        text=config.CHANNEL_NAME, url=config.CHANNEL_LINK),
                 ],
             ]
         ),
